@@ -1,0 +1,85 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* General table styling */
+table {
+    width: 99%;
+    margin-top: 10px;
+    background-color: #f8cdd3; /* Soft pink color */
+    color: #4a4a4a; /* Dark gray for text */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    border-collapse: collapse;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+td {
+    padding: 12px 25px;
+    cursor: pointer;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+td:hover {
+    background-color: #ffb6c1; /* Light pink hover effect */
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
+h4{
+    
+    background-color: #ffb6c1;
+    color: #383636;
+    padding-left: 43%;
+    padding-right: 43%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family:'Times New Roman', Times, serif ;
+    position: fixed ;
+    bottom: 0;
+    border-radius: 5px;
+}
+
+.card{
+    background-color: #ffb6c1;
+    padding: 50px;
+    border-radius: 8px;
+    float: left;
+    margin: 20px;
+    text-align: center;
+    color: #462b10;
+    box-shadow: 5px 2px 5px grey;
+    margin-top: 198px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.card:hover{
+    background-color: #f8ccd3;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
