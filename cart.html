@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pushpa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body onload="cartdisplay()">
+
+    <!-- Navigation -->
+    <table class="nav">
+        <tr>
+            <td><i class="fa-solid fa-house"></i> <a href="index.html">Home</a> </td>
+            <td><i class="fa-solid fa-cart-shopping"></i> <a href="cart.html">Cart</a></td>
+            <td><i class="fa-solid fa-address-card"></i> <a href="profile.html">Profile</a></td>
+            <td onclick="logout()" id="logout"><i class="fa-solid fa-right-from-bracket"></i> Log out</td>
+        </tr>
+    </table>
+    
+    <!-- Cart Section -->
+    <div class="cart-container">
+        <h2>Your Shopping Cart</h2>
+
+        <div id="cartResult"></div>
+
+        <!-- Cart Summary -->
+        <div class="cart-summary">
+            <div class="summary-item">
+                <p>Total:</p>
+                <p id="total">₹ 0.00</p>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+</body>
+<script src="Flower.js"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>

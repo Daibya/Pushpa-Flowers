@@ -1,0 +1,188 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+/* Positioning and styling the navigation bar */
+.nav {
+    width: 98%;
+    background-color: #f8cdd3; /* Soft pink color */
+    color: #4a4a4a; /* Dark gray for text */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    border-collapse: collapse;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    position: fixed; /* Make it fixed at the top */
+    top: 0; /* Align it to the top */
+    left: 1;
+    z-index: 1000; /* Ensure it stays on top of other content */
+    margin-top: 1%;
+}   
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f0f1;
+    color: #f5a461;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 20px 20px; /* Added padding at the top to prevent content from being hidden under the fixed nav */
+    flex-direction: column;
+}
+
+/* Rest of your body, input, and button styles stay the same */
+
+
+.nav td {
+    padding: 12px 25px;
+    cursor: pointer;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 8px;
+}
+
+.nav td:hover {
+    background-color: #ffb6c1; /* Light pink hover effect */
+    transform: scale(1.05);
+    border-radius: 8px;
+}
+
+/* Table Styling */
+.log {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
+/* Heading Styling */
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fd8b2e;
+    margin-bottom: 20px;
+    font-family: cursive;
+}
+
+/* Input Fields Styling */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #fd8b2e;
+    background-color: #ffffff;
+    border: 2px solid #fd8b2e;
+    transition: all 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #fd8b2e;
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fd8b2e;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Flower Animation on Button */
+button::before,
+button::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #f1cfb3;
+    border-radius: 50%;
+    animation: bloom 2s infinite ease-in-out;
+}
+
+button::before {
+    top: 10%;
+    left: 10%;
+}
+
+button::after {
+    top: 80%;
+    left: 80%;
+}
+
+@keyframes bloom {
+    0% {
+        transform: scale(0.5);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.5);
+        opacity: 0.8;
+    }
+}
+
+button:hover {
+    background-color: #d46204;
+}
+
+button:hover::before,
+button:hover::after {
+    background-color: #fd8b2e;
+}
+
+/* Links styling (Forgot password and Create account) */
+.links {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #f5a461;
+    padding-top: 5px;
+    font-family: 'Times New Roman', Times, serif;                   
+}
+
+.links a {
+    color: #fd8b2e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.links span {
+    color: #fd8b2e;
+    font-weight: bold;
+    margin: 0 5px;
+}

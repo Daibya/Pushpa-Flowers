@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pushpa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="profile.css"> <!-- Link to external CSS -->
+</head>
+<body onload="displaymenu()">
+    <table>
+        <tr>
+            <td><i class="fa-solid fa-house"></i> <a href="index.html">Home</a> </td>
+
+            <td id="login"><i class="fa-solid fa-house"></i> <a href="user.html">Log in</a> </td>
+
+            <td id="cart"><i class="fa-solid fa-cart-shopping"></i><a href="cart.html"> Cart</a></td>
+            <td id="profile"><i class="fa-solid fa-address-card"></i> <a href="profile.html">Profile</a></td>
+            <td onclick="logout()" id="logout"><i class="fa-solid fa-right-from-bracket"></i> Log out</td>
+        </tr>
+    </table> 
+
+    <main class="profile-container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Order History</a></li>
+                <li><a href="#">Addresses</a></li>
+                <li><a href="#">Payment Methods</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </aside>
+
+        <section class="profile-details">
+            <div class="profile-header">
+                <img src="picture.jpeg" alt="Profile Picture" class="profile-picture">
+                <div>
+                    <h1>Daibyasankha Adhikary</h1>
+                    <p>Email: daibyasankhaadhikary@gmail.com</p>
+                    <p>Phone: +91 6291 365 410</p>
+                </div>
+                <button class="edit-profile-btn">Edit Profile</button>
+            </div>
+
+            <div class="orders-section">
+                <h2>Your Orders</h2>
+                <ul class="orders-list">
+                    <li>
+                        <div>
+                            <strong>Order ID:</strong> 12345 <br>
+                            <strong>Item:</strong> Rose
+                        </div>
+                        <span class="status">Delivered</span>
+                    </li>
+                    <li>
+                        <div>
+                            <strong>Order ID:</strong> 12346 <br>
+                            <strong>Item:</strong> Sunflower
+                        </div>
+                        <span class="status">Shipped</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="Flower.js"></script>
+</body>
+</html>

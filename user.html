@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="user.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pushpa</title>
+</head>
+<body onload="displaymenu()">
+    <table class="nav">
+        <tr>
+            <td><i class="fa-solid fa-house"></i> <a href="index.html">Home</a> </td>
+
+            <td id="login"><i class="fa-solid fa-house"></i> <a href="user.html">Log in</a> </td>
+
+            <td id="cart"><i class="fa-solid fa-cart-shopping"></i><a href="cart.html"> Cart</a></td>
+            <td id="profile"><i class="fa-solid fa-address-card"></i> <a href="profile.html">Profile</a></td>
+            <td onclick="logout()" id="logout"><i class="fa-solid fa-right-from-bracket"></i> Log out</td>
+        </tr>
+    </table> 
+    
+    <table class="log">
+        <tr>
+            <td><h3><i class="fa-solid fa-user"></i> User</h3></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Enter your email" id="mail"></td>
+        </tr>
+        <tr>
+            <td><input type="password" placeholder="Enter your Password" id="pass"></td>
+        </tr>
+        <tr>
+            <td><button onclick="login()">Log in <i class="fa-solid fa-right-to-bracket"></i></button></td>
+        </tr>
+        <!-- Added Forgot Password and Create Account Links -->
+        <tr>
+            <td class="links">
+                <a href="#" class="forgot-password">Forgot Password?</a>
+                <span> | </span>
+                <a href="new.html" class="create-account">Create an Account</a>
+            </td>
+        </tr>
+    </table>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="Flower.js"></script>
+</body>
+</html>

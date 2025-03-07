@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pushpa</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td><h3>Create an Account</h3></td>
+        </tr>
+        <tr>
+            <td><input type="email" placeholder="Enter your gmail" id="mail"></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Enter your name" id="name"></td>
+        </tr>
+        <tr>
+            <td class="password-container">
+                <input type="password" placeholder="Enter your password" id="pass">
+                <span id="toggle-eye" class="eye-icon">&#128065;</span> <!-- Eye Icon -->
+            </td>
+        </tr>
+        <tr>
+            <td><button onclick="reg()">Register</button></td>
+        </tr>
+    </table>
+
+    <script src="Flower.js"></script>
+    <script>
+        // Toggle password visibility
+        document.getElementById("toggle-eye").addEventListener("click", function() {
+            var passwordField = document.getElementById("pass");
+            if (passwordField.type === "password") {
+                passwordField.type = "text";  // Show password
+            } else {
+                passwordField.type = "password";  // Hide password
+            }
+        });
+    </script>
+    
+</body>
+</html>

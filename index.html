@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pushpa</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body onload="display(); displaymenu()">
+    <table>
+        <tr>
+            <td><i class="fa-solid fa-house"></i> <a href="index.html">Home</a> </td>
+
+            <td id="login"><i class="fa-solid fa-right-from-bracket"></i> <a href="user.html">Log in</a> </td>
+
+            <td id="cart"><i class="fa-solid fa-cart-shopping"></i><a href="cart.html"> Cart</a></td>
+            <td id="profile"><i class="fa-solid fa-address-card"></i> <a href="profile.html">Profile</a></td>
+            <td onclick="logout()" id="logout"><i class="fa-solid fa-right-from-bracket"></i> Log out</td>
+        </tr>
+    </table> 
+    <div class="search"><input type="text" placeholder="Search flower..." onkeyup="searchflowers()" id="search"><i class="fas fa-search"></i></div>
+    
+
+    <div id="result"></div>
+
+    <div><h4 class="footer">Developed by @ Daibya</h4></div>
+    <script src="Flower.js"></script>
+    
+</body>
+</html>
